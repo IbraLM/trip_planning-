@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>CreationEtudiant</servlet-name>
+		<servlet-class>servlet.CreationEtudiant</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Connexion</servlet-name>
+		<servlet-class>servlet.Connexion</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Deconnexion</servlet-name>
+		<servlet-class>servlet.Deconnexion</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CreationEvenement</servlet-name>
+		<servlet-class>servlet.CreationEvenement</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CreationTrajet</servlet-name>
+		<servlet-class>servlet.CreationTrajet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ConsultationTrajetZones</servlet-name>
+		<servlet-class>servlet.ConsultationTrajetZones</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TrajetsAucunEvent</servlet-name>
+		<servlet-class>servlet.TrajetsAucunEvent</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CreationEtudiant</servlet-name>
+		<url-pattern>/creationEtudiant</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CreationEvenement</servlet-name>
+		<url-pattern>/creationEvenement</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ConsultationTrajetZones</servlet-name>
+		<url-pattern>/consultationTrajetZones</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TrajetsAucunEvent</servlet-name>
+		<url-pattern>/trajetsAucunEvent</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>CreationTrajet</servlet-name>
+		<url-pattern>/creationTrajet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Connexion</servlet-name>
+		<url-pattern>/connexion</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Deconnexion</servlet-name>
+		<url-pattern>/deconnexion</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+	<filter-name>RestrictionFilter</filter-name>
+	<filter-class>com.sdzee.filters.RestrictionFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>RestrictionFilter</filter-name>
+		<url-pattern>/Restreintes/*</url-pattern>
+	</filter-mapping>
+	
+	
+
+</web-app>
